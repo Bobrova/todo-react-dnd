@@ -20,6 +20,8 @@ export const isCheckedExists = createSelector(
 export const getCurrentId = createSelector(
   [getTodosUsual, getTodosQuickly],
   (todoUsual,todoQuickly) => {
-    return Math.max(todoUsual.length !== 0 ? todoUsual[todoUsual.length - 1].id : 0, todoQuickly.length !== 0 ? todoQuickly[todoQuickly.length - 1].id : 0);
+    let maxtodoUsual = todoUsual.length !== 0 ? (todoUsual.reduce((acc, curr) => acc.id > curr.id ? acc : curr)).id : 0;
+    let maxtodoQuickly = todoQuickly.length !== 0 ? (todoQuickly.reduce((acc, curr) => acc.id > curr.id ? acc : curr)).id : 0;
+    return Math.max(maxtodoUsual, maxtodoQuickly);
   },
 );

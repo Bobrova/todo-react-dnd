@@ -72,8 +72,8 @@ const TaskList = (props) => {
     const result = {};
     result[droppableSource.droppableId] = sourceClone;
     result[droppableDestination.droppableId] = destClone;
-
     return result;
+    
   };
 
   const getList = id => id === 'droppable1' ? props.usualList : props.quicklyList;
