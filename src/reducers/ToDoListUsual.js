@@ -20,7 +20,7 @@ export default function todoUsual(state = initialState, action) {
       return state.filter(todo => todo.id !== action.id);
 
     case COMPLETE_ALL_TODOS: {
-      const areAllMarked = state.every(todo => todo.completed);
+      const areAllMarked = action.isAllChecked;
       return state.map(todo => ({
         ...todo,
         completed: !areAllMarked,

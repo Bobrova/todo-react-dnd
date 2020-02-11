@@ -5,8 +5,12 @@ import './style.css';
 function BtnSelectAll(props) {
   const { isAllChecked, completeAllTodos } = props;
   const classActive = isAllChecked ? 'active' : '';
+
+  const handleClickBtn = () => {
+    completeAllTodos(isAllChecked);
+  }
   return (
-    <div className={`checked-items ${classActive}`} onClick={completeAllTodos}>{String.fromCharCode(709)}</div>
+    <div className={`checked-items ${classActive}`} onClick={handleClickBtn}>{String.fromCharCode(709)}</div>
   );
 }
 
