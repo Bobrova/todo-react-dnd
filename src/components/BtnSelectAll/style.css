@@ -1,0 +1,18 @@
+.checked-items {
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 25px;
+  font-size: 30px;
+  color: #dbdbdb;
+  cursor: default;
+}
+
+.checked-items.active {
+  color: #4d4d4d;
+}
+
+.checked-items:hover {
+  color: #4d4d4d;
+  cursor: pointer;
+}

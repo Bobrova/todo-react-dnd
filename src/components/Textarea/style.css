@@ -1,0 +1,23 @@
+.main__input-area {
+  position: absolute;
+  top: 0;
+  left: 11%;
+  padding: 20px;
+  margin: 0;
+  border: none;
+  width: 89%;
+  height: 100%;
+  resize: none;
+  font: 24px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #444;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.main__input-area:focus {
+  outline: none;
+}
+
+.main__input-area::placeholder {
+  color: #dbdbdb;
+}

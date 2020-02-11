@@ -1,0 +1,9 @@
+export const ADD_TODO = 'ADD_TODO';
+export const DELETE_TODO = 'DELETE_TODO';
+export const EDIT_TODO = 'EDIT_TODO';
+export const COMPLETE_TODO = 'COMPLETE_TODO';
+export const COMPLETE_ALL_TODOS = 'COMPLETE_ALL_TODOS';
+export const UPDATE_LIST_USUAL = 'UPDATE_LIST_USUAL';
+export const UPDATE_LIST_QUICKLY = 'UPDATE_LIST_QUICKLY';
+export const TASK_TRANSFER = 'TASK_TRANSFER';
+

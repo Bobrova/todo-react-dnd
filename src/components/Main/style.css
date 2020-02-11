@@ -1,0 +1,21 @@
+.main {
+  box-shadow: 2px 3px 8px -2px gray;
+}
+
+.main__header {
+  position: relative;
+  width: 50%;
+  height: 70px;
+  cursor: text;
+  margin: 0 auto;
+}
+
+.twoLists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TaskListWrapper {
+  display: flex;
+  justify-content: space-between;
+}

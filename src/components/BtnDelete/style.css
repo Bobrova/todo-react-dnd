@@ -1,0 +1,28 @@
+.btnDel {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  padding: 10px;
+}
+
+.btnDel::before,
+.btnDel::after {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  content: ' ';
+  height: 20px;
+  width: 3px;
+  background-color: #e27171;
+}
+
+.btnDel::before {
+  transform: rotate(45deg);
+}
+
+.btnDel::after {
+  transform: rotate(-45deg);
+}
